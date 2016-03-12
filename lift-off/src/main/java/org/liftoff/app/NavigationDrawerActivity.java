@@ -23,6 +23,7 @@ public class NavigationDrawerActivity extends FragmentHostActivity {
   private void setupDrawer() {
     drawerLayout = findView(R.id.drawer_layout);
     Toolbar toolbar = findView(R.id.toolbar);
+    setSupportActionBar(toolbar);
     drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,  toolbar, R.string.open, R.string.close);
     drawerLayout.setDrawerListener(drawerToggle);
   }
